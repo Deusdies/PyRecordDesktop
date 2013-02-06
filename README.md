@@ -3,9 +3,9 @@ PyRecordDesktop
 
 A simple python + ffmpeg script to record your desktop. Currently works in Linux only - written in Python 2.7
 
-### REQUIREMENTS
+### Requirements
 
-Requires ffmpeg, X, ALSA, libmp3.
+Requires python, ffmpeg, X, ALSA, libmp3.
 
 ### Usage 
 
