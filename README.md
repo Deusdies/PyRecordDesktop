@@ -9,8 +9,10 @@ Requires ffmpeg, X, ALSA, libmp3.
 
 ### Usage 
 
-**python recorddesktop.py _outputfile_**
+python recorddesktop.py _outputfile_
 
 #### Optional arguments:
-    * --res 1920x1080 - the resolution to record in
-    * --codec h264 - the codec to encode in
+     --res 1920x1080 - the resolution to record in
+     --codec h264 - the codec to encode in
+     
+     Run the --help argument for more info.
