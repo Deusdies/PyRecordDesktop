@@ -24,9 +24,11 @@ outputfile = args.outputfile if args.outputfile else DEFAULT_OUTPUTFILE
 
 if resolution not in RESOLUTION_LIST:
 	print "Invalid resolution. Run {0} -h for details".format(__file__)
+	sys.exit(1)
 
 if codec not in CODEC_LIST:
 	print "Invalid codec. Run {0} -h for details".format(__file__)
+	sys.exit(1)
 
 command = """ffmpeg -f x11grab -y -r 30 -s {0} -i :0.0 -vcodec {1} -sameq -f alsa -i default -ar 44100 -acodec libmp3lame -ac 2 {2}""".format(resolution, codec, args.outputfile)
 
